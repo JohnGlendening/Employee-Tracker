@@ -28,14 +28,14 @@ SELECT title
     ORDER BY department_id ASC, title ASC;
 
 USE emsDB;
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Ashley', 'Rodriguez', 3, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'Doe', 1, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Mike', 'Chan', 2, 2);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Kevin', 'Tupik', 4, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Malia', 'Brown', 5, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Sarah', 'Lourd', 6, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Tom', 'Allen', 7, 6);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Christian', 'Eckenrode', 3, 3);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Ashley', 'Glendening', 3, null);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'Glendening', 1, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Mike', 'Glendening', 2, 2);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Kevin', 'Glendening', 4, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Malia', 'Glendening', 5, null);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Sarah', 'Glendening', 6, null);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Tim', 'Allen', 7, 6);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Christian', 'Glendening', 3, 3);
 
 USE emsDB;
 SELECT * FROM employee;
@@ -240,14 +240,14 @@ use emsdb; select * from department;
 -- SELECT e.first_name, e.last_name, r.title, d.name, r.salary, e.manager_id FROM employee as e, role as r, department as d WHERE 
 
 -- ALL EMPLOYEES >> this is the goal table output from console.table
--- 2 John, Doe, Sales Lead, Sales, 100000, Ashley Rodriguez
--- 3 Mike, Chan, Salesperson, Sales, 80000, John Doe
--- 1 Ashley, Rodriguez, Lead Engineer, Engineering, 150000, null
--- 4 Kevin, Tupik, Software Engineer, Engineering, 120000, Ashley Rodriguez
--- 5 Malia, Brown, Accountant, Finance, 125000, null
--- 6 Sarah, Lourd, Legal Team Lead, Legal, 250000, null
--- 7 Tom, Allen, Lawyer, Legal, 190000, Sarah Lourd
--- 8 Christian, Eckenrode, Lead Engineer, Engineering, 150000, Mike Chan
+-- 2 John, Glendening, Sales Lead, Sales, 100000, Ashley Glendening
+-- 3 Mike, Glendening, Salesperson, Sales, 80000, John Glendening
+-- 1 Ashley, Glendening, Lead Engineer, Engineering, 150000, null
+-- 4 Kevin, Glendening, Software Engineer, Engineering, 120000, Ashley Glendening
+-- 5 Malia, Glendening, Accountant, Finance, 125000, null
+-- 6 Sarah, Glendening, Legal Team Lead, Legal, 250000, null
+-- 7 Tim, Allen, Lawyer, Legal, 190000, Sarah Glendening
+-- 8 Christian, Glendening, Lead Engineer, Engineering, 150000, Mike Glendening
 
 -- DEPARTMENT
 -- 1 Sales
@@ -265,14 +265,14 @@ use emsdb; select * from department;
 -- 7 Lawyer
 
 -- EMPLOYEE
--- 1 Ashley, Rodriguez
--- 2 John, Doe
--- 3 Mike, Chan
--- 4 Kevin, Tupik
--- 5 Malia, Brown
--- 6 Sarah, Lourd
--- 7 Tom, Allen
--- 8 Christian, Eckenrode
+-- 1 Ashley, Glendening
+-- 2 John, Glendening
+-- 3 Mike, Glendening
+-- 4 Kevin, Glendening
+-- 5 Malia, Glendening
+-- 6 Sarah, Glendening
+-- 7 Tim, Allen
+-- 8 Christian, Glendening
 
 -- USE emsDB;
 -- UPDATE role r
